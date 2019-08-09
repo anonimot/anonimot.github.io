@@ -1,10 +1,10 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+title:              
+bio:                
+description:        
+locale:             en_vi
+baseurl: ""
+url: "anoonimoost.github.io"
 
 # Comments
 disqus_shortname:   default
@@ -17,9 +17,9 @@ instagram:          default
 github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           
+phone:              
+email:              anonymostgithub96@gmail.com
 
 # Other
 background_image:   /images/bg.jpg
@@ -58,7 +58,7 @@ gems:
   - jekyll-gist
   - jekyll-paginate
 
-paginate: 6
+paginate: 20
 paginate_path: "/blog/page:num/"
 
 jekyll-mentions:
