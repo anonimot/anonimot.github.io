@@ -1,85 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <title>Danh sách</title>
-  <link rel="shortcut icon" href="img/logo-icon.png" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.4.3.1.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-  body {
-    background-image: url("img/background.jpg");
-  } 
+    <title>Danh sách</title>
+    <link rel="shortcut icon" href="img/logo-icon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/bootstrap/css/bootstrap.4.3.1.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      body {
+        background-image: url("img/background.jpg");
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <br />
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <!-- DataTales-->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h4 class="m-0 font-weight-bold text-primary text-center my-auto">
+              Danh sách
+            </h4>
+          </div>
+          <div class="card-header">
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Nhập vào đây để tìm..."
+            />
+          </div>
 
-  </style>
-</head>
-<body id="page-top">
-<div id="wrapper">
-  <br/>
-  <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- DataTales-->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary text-center my-auto">Danh sách</h4>
-            </div>
-            <div class="card-header">
-              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập vào đây để tìm...">
-            </div>
-
-            <div class="card-body">
-                <div class="col">
-                  <table class="myTable">
-                    <tr class="header">
-                      <th style="width:60%;">Họ và tên</th>
-                      <th style="width:40%;">Địa chỉ</th>
-                      <th style="width:40%;">Số tiền</th>
-                    </tr>
-                    <tbody id="myTable" style="background-color: #FFF">
-                    <tr>
-                      <td>Trần Văn A</td>
-                      <td>Germany</td>
-                      <td>100000</td>
-                    </tr>
-                    <tr>
-                      <td>Nguyễn Văn B</td>
-                      <td>England</td>
-                      <td>200000</td>
-                    </tr>
-                    <tr>
-                      <td>Đoàn Văn D</td>
-                      <td>American</td>
-                      <td>50000</td>
-                    </tr>
-                    <tr>
-                      <td>Phạm Văn G</td>
-                      <td>Philipin</td>
-                      <td>10000</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
+          <div class="card-body">
+            <div class="col">
+              <table class="myTable">
+                <tr class="header">
+                  <th style="width:60%;">Họ và tên</th>
+                  <th style="width:40%;">Địa chỉ</th>
+                  <th style="width:40%;">Số tiền</th>
+                </tr>
+                <tbody id="myTable" style="background-color: #FFF">
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>Trần Văn A</td>
+                    <td>Germany</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>Nguyễn Văn B</td>
+                    <td>England</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>Đoàn Văn D</td>
+                    <td>American</td>
+                    <td>50000</td>
+                  </tr>
+                  <tr>
+                    <td>Phạm Văn G</td>
+                    <td>Philipin</td>
+                    <td>10000</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <!-- end data -->
-
         </div>
-        <!-- /.container-fluid -->
+        <!-- end data -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-  </div>
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- Page level plugins -->
-</body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="lib/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Page level plugins -->
+  </body>
 </html>
