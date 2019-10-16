@@ -1,6 +1,68 @@
-.content-bigger {
-  background-color: rgb(255, 65, 65);
-  margin: 50px;
-  width: auto;
-  height: 630px;
+body{
+  margin: 0;
+  padding: 0;
 }
+
+
+/* khoi 1 */
+.content-bigger-1 {
+  background-color: rgb(255, 65, 65);
+  top: 50px;
+  margin: 15px 35px 20px 35px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
+}
+
+.time-content{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* het khoi 1 */
+
+
+/* khoi 2  */
+.content-bigger-2 {
+  background-color: rgb(255, 65, 65);
+  margin: 0 35px 35px 35px;
+  width: auto;
+  height: 180px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
+}
+
+
+/* het khoi 2  */
+
+/* khoi 3  */
+.content-bigger-3 {
+  background-color: rgb(255, 65, 65);
+  margin: 35px;
+  width: auto;
+  height: 180px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
+}
+
+
+/* het khoi  3 */
+
+
+/* khoi 4 */
+.content-bigger-4 {
+  background-color: rgb(255, 65, 65);
+  margin: 35px;
+  width: auto;
+  height: 180px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
+}
+
+
+/* het khoi 4  */
