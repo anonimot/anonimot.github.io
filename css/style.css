@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 
@@ -26,13 +26,21 @@ body{
 
 /* het khoi 1 */
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 
 /* khoi 2  */
 .content-bigger-2 {
   background-color: rgb(255, 65, 65);
-  margin: 0 35px 35px 35px;
-  width: auto;
-  height: 180px;
+  margin: 0 0 20px 35px;
+  width: 155px;
+  height: 155px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
 }
@@ -40,29 +48,6 @@ body{
 
 /* het khoi 2  */
 
-/* khoi 3  */
-.content-bigger-3 {
-  background-color: rgb(255, 65, 65);
-  margin: 35px;
-  width: auto;
-  height: 180px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
-}
-
-
-/* het khoi  3 */
-
-
-/* khoi 4 */
-.content-bigger-4 {
-  background-color: rgb(255, 65, 65);
-  margin: 35px;
-  width: auto;
-  height: 180px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(155, 155, 155);
-}
 
 
 /* het khoi 4  */
